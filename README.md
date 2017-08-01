@@ -268,6 +268,6 @@ Finally browse to *localhost:8081* to view full Swagger documentation for your n
 
 ![screenshot_2017-08-01_22-36-32](https://user-images.githubusercontent.com/7415999/28845969-06986bea-770a-11e7-850c-7bd058e95d7e.png)
 
-You can also add as many tables via *adminer* as you like and the API will automatically be extended.
+You can use Swagger to test creating, deleting, updating and listing entities via you newly minted REST API. You can also add as many tables via *adminer* as you like and the API will automatically be extended with new entities.
 
 Enjoy!
