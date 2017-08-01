@@ -1,4 +1,4 @@
-# phpmysql/Dockerfile
+# php-mysqli/Dockerfile
 
 FROM php:7.1.7-apache
 

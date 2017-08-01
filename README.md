@@ -52,7 +52,7 @@ mkdir src
 ```
 We will also need to customise the default docker image for php/apache (essentially create a new image deriving from it) and will do so in this folder..
 ```
-mkdir phpmysql
+mkdir php-mysqli
 ```
 #### Step 4: Create Docker Composer definition
 Create a file called *docker-compose.yml* in this folder. It will contain the intructions for Docker Compose to create the three images (mysql, adminer to manage the database and php/apache for hosting the php-crud-api script)
@@ -100,7 +100,7 @@ There are quite a few official [php images for Docker](https://hub.docker.com/_/
 Create a file called *Dockerfile* in the *phpmysql* subfolder. Let's add both the inclusion of *mysqli* with PHP and activate the *rewrite* module of Apache whilst we at it (we will need this too).
 
 ```
-#phpmysql/Dockerfile
+#php-mysqli/Dockerfile
 
 FROM php:7.1.7-apache
 
