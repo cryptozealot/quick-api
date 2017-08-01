@@ -56,7 +56,7 @@ mkdir phpmysql
 #### Step 4: Create Docker Composer definition
 Create a file called *docker-compose.yml* in this folder. It contains the istructions for Docker Compose to create the three images (mysql, adminer to manage the database and php/apache for hosting the php-crud-api script)
 ```yaml
-# docker-compase.yml
+# docker-compose.yml
 
 version: '2'
 
@@ -235,7 +235,7 @@ Open a browser and try **http://localhost/api/movies/1**. You should see :
 The php-crud-api script automatically generates [Swagger](https://swagger.io/) documentation, and Swagger-UI can easily be added to the Docker Compose script. Add the *swagger* service just below the *php* service as follows.
 
 ```yaml
-# docker-compase.yml
+# docker-compose.yml
 
 version: '2'
 
