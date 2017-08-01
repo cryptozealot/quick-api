@@ -20,7 +20,7 @@ The solution comprises of
 - A [Swagger](https://hub.docker.com/r/swaggerapi/swagger-ui/) docker container to display the API documentation and test the API that is emitted automatically by the *php-crud-api* script
 
 
-## Step-by-step guide
+## The Step-by-step Guide
 
 For this project I am using an Ubuntu Server (16.04.2 LTS with Xubuntu Desktop), but other than the [initial installation of Docker](https://docs.docker.com/engine/installation/), this tutorial should work for you.
 
