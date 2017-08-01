@@ -14,9 +14,10 @@ Getting the test REST API out there ASAP will get everybody going in parallel an
 The solution comprises of
 - [Docker](https://docker.com) to help you run a isolated instances/environments of the three main components (web server, database and scripting language)
 - [php-crud-api](https://github.com/mevdschee/php-crud-api) developed by Maurits van der Schee, a really clever, lean and very feature rich single file PHP script that exposes a database as an API
-- [PHP/Apache](https://hub.docker.com/_/php/) docker image to host and execute the script
-- The official [MySQL](https://hub.docker.com/_/mysql/) docker image to define our entities and store them in
-- The single file [Adminer](https://hub.docker.com/_/adminer/) script that will allow us to view/modify our MySQL data
+- [PHP/Apache](https://hub.docker.com/_/php/) docker container to host and execute the script
+- A [MySQL](https://hub.docker.com/_/mysql/) docker container to define our entities and store them in
+- The single file [Adminer](https://hub.docker.com/_/adminer/) script that will allow us to view/modify our MySQL data, running in a Docker container
+- A [Swagger](https://hub.docker.com/r/swaggerapi/swagger-ui/) docker container to display the API documentation and test the API that is emitted automatically by the *php-crud-api* script
 
 
 ## Step-by-step guide
