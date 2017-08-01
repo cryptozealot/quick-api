@@ -230,4 +230,35 @@ Open a browser and try **http://localhost/api/movies/1**. You should see :
 {"id":1,"name":"Star Wars: Episode IV - A New Hope","year":1977,"director":"George Lucas"}
 ```
 
-(todo: show a few more examples of GET, POST, PUT, DELETE, GET with parameters, Swagger docs, including how to use POSTMAN extension on google)
+#### Step 11: Add Swagger documentation and test your API
+
+The php-crud-api script automatically generates [Swagger](https://swagger.io/) documentation, and Swagger-UI can easily be added to the Docker Compose script. Add the *swagger* service just below the *php* service as follows.
+
+```yaml`
+# stack.yml
+
+version: '2'
+
+services:
+
+...
+
+  swagger:
+    image: swaggerapi/swagger-ui
+    environment:
+      API_URL: "http://localhost/api/api.php"
+    ports:
+      - 8081:8080
+    depends_on:
+      - mysql
+
+volumes:
+  ...
+```
+Now simply browse to *localhost:8081* to view full Swagger documentation for your new API.
+
+![screenshot_2017-08-01_22-36-32](https://user-images.githubusercontent.com/7415999/28845969-06986bea-770a-11e7-850c-7bd058e95d7e.png)
+
+You can also add as many tables via *adminer* as you like and the API will automatically be extended.
+
+Enjoy!

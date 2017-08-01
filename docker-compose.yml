@@ -28,5 +28,14 @@ services:
     depends_on:
       - mysql
 
+  swagger:
+    image: swaggerapi/swagger-ui
+    environment:
+      API_URL: "http://localhost/api/api.php"
+    ports:
+      - 8081:8080
+    depends_on:
+      - mysql
+
 volumes:
   mysql_data:
