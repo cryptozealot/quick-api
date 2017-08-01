@@ -55,7 +55,7 @@ We will also need to customise the default docker image for php/apache (essentia
 mkdir phpmysql
 ```
 #### Step 4: Create Docker Composer definition
-Create a file called *docker-compose.yml* in this folder. It contains the istructions for Docker Compose to create the three images (mysql, adminer to manage the database and php/apache for hosting the php-crud-api script)
+Create a file called *docker-compose.yml* in this folder. It will contain the intructions for Docker Compose to create the three images (mysql, adminer to manage the database and php/apache for hosting the php-crud-api script)
 ```yaml
 # docker-compose.yml
 
