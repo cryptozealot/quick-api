@@ -1,0 +1,32 @@
+# stack.yml
+
+version: '2'
+
+services:
+
+  mysql:
+    image: mysql:8.0.2
+    environment:
+      MYSQL_ROOT_PASSWORD: "wookie"
+      MYSQL_DATABASE: "api"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  adminer:
+    image: adminer
+    ports:
+      - 8080:8080
+    depends_on:
+      - mysql
+
+  php:
+    build: ./php-mysqli
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_data:
