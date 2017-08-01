@@ -264,7 +264,7 @@ docker-compose down
 ```
 docker-compose up -d
 ```
-Finally - simply browse to *localhost:8081* to view full Swagger documentation for your new API.
+Finally browse to *localhost:8081* to view full Swagger documentation for your new API.
 
 ![screenshot_2017-08-01_22-36-32](https://user-images.githubusercontent.com/7415999/28845969-06986bea-770a-11e7-850c-7bd058e95d7e.png)
 
