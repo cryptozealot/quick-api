@@ -1,10 +1,10 @@
 # quick-api
-A how-to guide for spinning up a fully functional REST API in 30 minutes (with good connectivity) and with no coding!
+A how-to guide for spinning up a fully functional REST API in 30 minutes (assuming fast connectivity) and with no coding!
 
 Build a REST API supporting GET/POST/DELETE/PUT and basic Swagger documentation using free tools (docker, apache, php, mysql and the very cool mevdschee/php-crud-api script developed by Maurits van der Schee).
 
 ## Introduction
-So you have a small team. You have a tight deadline to develop a Minimum Viable Product (MVP) or demo - complete with REST API, database server, possibly a responsive web portal and/or a mobile appication.
+So you have a small team. You have a tight deadline to develop a Minimum Viable Product (MVP) or demo - complete with REST API, database server, possibly a responsive web portal and/or a mobile application.
 
 You want to get everyone on the team going as quickly as possible and have a good idea what the models will look like in your freshly minted Model-View-Controller (MVC) design.
 
