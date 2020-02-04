@@ -10678,7 +10678,8 @@ namespace Tqdev\PhpCrudApi {
     $config = new Config([
         'username' => 'root',
         'password' => 'wookie',
-        'database' => 'api'
+        'database' => 'api',
+        'address' => 'mysql
     ]);
     $request = RequestFactory::fromGlobals();
     $api = new Api($config);
