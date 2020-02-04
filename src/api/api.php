@@ -10674,7 +10674,7 @@ namespace Tqdev\PhpCrudApi {
     use Tqdev\PhpCrudApi\Config;
     use Tqdev\PhpCrudApi\RequestFactory;
     use Tqdev\PhpCrudApi\ResponseUtils;
-
+    error_reporting(E_ERROR | E_PARSE);
     $config = new Config([
         'username' => 'root',
         'password' => 'wookie',
