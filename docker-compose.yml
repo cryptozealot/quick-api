@@ -31,7 +31,7 @@ services:
   swagger:
     image: swaggerapi/swagger-ui
     environment:
-      API_URL: "http://localhost/api/api.php"
+      API_URL: "http://192.168.100.200/api/api.php"
     ports:
       - 8081:8080
     depends_on:
