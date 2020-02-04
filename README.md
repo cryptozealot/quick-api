@@ -1,3 +1,21 @@
+# Installation
+1. clone the repo
+2. cd quick-api
+3. nano src/.htpasswd
+4. docker-compose up -d
+5. bash into php-apache container and "chown www-data /var/www/html/api/.htpasswd" ( This needs a fix )
+6. open localhost:8081 and input credentials mysql, root, wookie, api
+7. create table
+8. create rows/entries in table
+9. go to localhost/api/records/{your-table-name}
+
+# Example request for testing
+
+curl -X POST -H "Content-Type: application/json" -d @server.json -u admin:admin http://192.168.100.2/api/records/servers
+
+
+Original readme below:
+
 # quick-api
 A how-to guide for spinning up a fully functional REST API in 30 minutes (assuming fast connectivity) and with no coding!
 
