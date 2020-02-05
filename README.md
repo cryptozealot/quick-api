@@ -1,8 +1,10 @@
 # Forked from https://github.com/andresharpe/quick-api
 +
- Upgraded php-crud-api to latest version
- Upgraded php-apache image
- Enabled basic authenitication - user:password
+Upgraded php-crud-api to latest version
+
+Upgraded php-apache image
+
+Enabled basic authenitication - user:password
 
 # Installation
 1. clone the repo
