@@ -10674,7 +10674,8 @@ namespace Tqdev\PhpCrudApi {
     use Tqdev\PhpCrudApi\Config;
     use Tqdev\PhpCrudApi\RequestFactory;
     use Tqdev\PhpCrudApi\ResponseUtils;
-//    error_reporting(E_ERROR | E_PARSE); //debug
+    // NO ERRORS ARE SHOWN !!! 
+    error_reporting(E_ERROR | E_PARSE); //comment to debug
 //  permissions of .htpasswd    
     $config = new Config([
         'username' => 'root',
