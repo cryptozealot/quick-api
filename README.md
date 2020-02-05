@@ -1,20 +1,21 @@
 # Installation
 1. clone the repo
-2. cd quick-api
-3. nano src/.htpasswd
-4. docker-compose up -d
-5. bash into php-apache container and "chown www-data /var/www/html/api/.htpasswd" ( This needs a fix )
-6. open localhost:8081 and input credentials mysql, root, wookie, api
-7. create table
-8. create rows/entries in table
-9. go to localhost/api/records/{your-table-name}
+2. "cd quick-api"
+3. Edit passwords "nano src/.htpasswd"
+4. "docker-compose up -d"
+5. open localhost:8081 and input credentials mysql, root, wookie, api
+6. create table mytable
+7. select an Auto Incrementable column, otherwise it will not work!!!
+8. go to localhost/api/records/mytable
 
 # Example request for testing
 
-curl -X POST -H "Content-Type: application/json" -d @server.json -u admin:admin http://192.168.100.2/api/records/servers
+curl -X POST -H "Content-Type: application/json" -d @server.json -u admin:admin http://192.168.100.2/api/records/mytable
 
 
-Original readme below:
+
+# Thanks to andresharpe!!
+# Original readme from forked repo below:
 
 # quick-api
 A how-to guide for spinning up a fully functional REST API in 30 minutes (assuming fast connectivity) and with no coding!
